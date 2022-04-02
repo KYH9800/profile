@@ -24,7 +24,7 @@ body {
   left: 0;
   right: 0;
 
-  background: rgba(0, 0, 0, 0.6);
+  background: rgb(27 27 27 / 85%);
   border-radius: 2px 2px 30px 30px;
 
   height: 50px;
@@ -62,16 +62,60 @@ body {
   color: #ffffff;
   margin: auto;
   max-width: 1000px;
-  line-height: 90vh;
+  line-height: 80vh;
   height: 100vh;
-  font-size: 35px;
+}
+
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.title a {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 37px;
   font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.title a:before,
+.title a:after {
+  content: '';
+  padding: 0.9em 0.4em;
+  position: absolute;
+  left: 50%;
+  width: 120%;
+  top: 50%;
+  display: block;
+  border: 5px solid rgb(107, 107, 107);
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 7s infinite alternate ease-in-out tipsy;
+}
+
+.title a:before {
+  border-color: #e6e6ffd5 #e6e6ffd5 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.title a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e6e6ffd5 #e6e6ffd5;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
 }
 
 .wrapper {
   height: auto;
   min-height: 100%;
-  padding-bottom: 75px;
 }
 
 .main {

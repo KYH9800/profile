@@ -1,5 +1,5 @@
 .projectWrapper {
-  height: 500px;
-  line-height: 500px;
-  color: aliceblue;
+  height: 50vh;
+  line-height: 50vh;
+  background-color: rgb(183 219 248 / 80%);
 }
