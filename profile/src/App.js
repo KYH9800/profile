@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
-import { gsap } from 'gsap';
 // css
 import './App.css';
 // components

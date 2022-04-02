@@ -1,5 +1,46 @@
 .aboutWrapper {
   height: 60vh;
-  line-height: 60vh;
+  /* line-height: 55.6vh; */
   background-color: #ffffffd1;
+}
+
+.aboutMain {
+  margin: auto;
+  max-width: 1200px;
+  display: flex;
+  /* background-color: beige; */
+}
+
+.aboutMain h2 {
+  line-height: 50vh;
+  padding: 1.2%;
+  font-size: 2.3em;
+  min-width: 30%;
+}
+
+.aboutMain .introTitle {
+  min-width: 70%;
+  text-align: left;
+}
+
+.aboutMain .introTitle h3 {
+  /* border-left: 2px solid black; */
+  padding-left: 1%;
+  margin-top: 22%;
+  font-size: 1.7em;
+  margin-bottom: 5%;
+}
+
+.aboutMain .intro {
+  border-left: 2px solid black;
+  padding-left: 2%;
+}
+
+.aboutMain .introTitle p span {
+  font-weight: bold;
+}
+
+.aboutMain .introTitle p a {
+  text-decoration: none;
+  font-weight: bold;
 }
