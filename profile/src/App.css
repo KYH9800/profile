@@ -1,3 +1,15 @@
 .App {
   text-align: center;
 }
+
+.header {
+  background-color: gray;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: yellow;
+}
