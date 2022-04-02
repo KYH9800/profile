@@ -1,20 +1,78 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
+import { gsap } from 'gsap';
 // css
 import './App.css';
-import { gsap } from 'gsap';
 // components
+import Contact from './components/Contact';
 import Skill from './components/Skill';
+import Project from './components/Project';
+import About from './components/About';
+import Education from './components/Education';
 
 const App = () => {
   return (
     <div className="App">
       <header className="header">
-        <div>header</div>
+        <nav className="topMenu">
+          <ul>
+            <li>
+              <a className="menuLink" href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="menuLink" href="#Introduce">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="menuLink" href="#Skill">
+                Skill
+              </a>
+            </li>
+            <li>
+              <a className="menuLink" href="#Project">
+                Project
+              </a>
+            </li>
+            <li>
+              <a className="menuLink" href="#Education">
+                Education
+              </a>
+            </li>
+            <li>
+              <a className="menuLink" href="#Contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div className="title">
+          <div>인정합니다. 프론트엔드 개발자 고윤혁</div>
+        </div>
       </header>
-      <main className="main">
-        <Skill />
-      </main>
-      <footer className="footer">footer</footer>
+
+      <div className="wrapper">
+        <main className="main">
+          <div id="Introduce">
+            <About />
+          </div>
+          <div id="Skill">
+            <Skill />
+          </div>
+          <div id="Project">
+            <Project />
+          </div>
+          <div id="Education">
+            <Education />
+          </div>
+          <div id="Contact">
+            <Contact />
+          </div>
+        </main>
+      </div>
     </div>
   );
 };
