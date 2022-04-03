@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 // css
 import './App.css';
 // components
@@ -10,38 +11,66 @@ import About from './components/About';
 import Education from './components/Education';
 
 const App = () => {
+  const homeRef = useRef();
+  const aboutRef = useRef();
+  const skillRef = useRef();
+  const projectRef = useRef();
+  const educationRef = useRef();
+  const contactRef = useRef();
+
+  useEffect(() => {
+    gsap.to(homeRef.current, {
+      rotation: '+=360',
+    });
+    gsap.to(aboutRef.current, {
+      rotation: '+=360',
+    });
+    gsap.to(skillRef.current, {
+      rotation: '+=360',
+    });
+    gsap.to(projectRef.current, {
+      rotation: '+=360',
+    });
+    gsap.to(educationRef.current, {
+      rotation: '+=360',
+    });
+    gsap.to(contactRef.current, {
+      rotation: '+=360',
+    });
+  });
+
   return (
     <div className="App">
       <header className="header">
         <nav className="topMenu">
           <ul>
             <li>
-              <a className="menuLink" href="#">
+              <a className="menuLink" ref={homeRef} href="#">
                 Home
               </a>
             </li>
             <li>
-              <a className="menuLink" href="#Introduce">
+              <a className="menuLink" ref={aboutRef} href="#About">
                 About
               </a>
             </li>
             <li>
-              <a className="menuLink" href="#Skill">
+              <a className="menuLink" ref={skillRef} href="#Skill">
                 Skill
               </a>
             </li>
             <li>
-              <a className="menuLink" href="#Project">
+              <a className="menuLink" ref={projectRef} href="#Project">
                 Project
               </a>
             </li>
             <li>
-              <a className="menuLink" href="#Education">
+              <a className="menuLink" ref={educationRef} href="#Education">
                 Education
               </a>
             </li>
             <li>
-              <a className="menuLink" href="#Contact">
+              <a className="menuLink" ref={contactRef} href="#Contact">
                 Contact
               </a>
             </li>
@@ -55,7 +84,7 @@ const App = () => {
 
       <div className="wrapper">
         <main className="main">
-          <div id="Introduce">
+          <div id="About">
             <About />
           </div>
           <div id="Skill">
