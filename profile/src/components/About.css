@@ -67,11 +67,8 @@
   font-size: medium;
   position: relative;
   overflow: hidden;
-  animation: ease-in-out;
-}
-
-.intro:hover {
   animation: 1s ease-in-out fadein;
+  /* animation: ease-in-out; */
 }
 
 .aboutMain .intro {
