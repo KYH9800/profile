@@ -24,15 +24,23 @@
 }
 
 .aboutMain h2 {
-  line-height: 50vh;
+  /* line-height: 50vh; */
+  margin-top: 25vh;
+  margin-bottom: 25vh;
   padding: 1.2%;
   font-size: 2.3em;
   min-width: 30%;
+  user-select: none;
   animation: 2s ease infinite aboutTipsy;
 }
 
+.aboutMain h2:hover {
+  animation-play-state: paused;
+  color: rgb(93, 93, 252);
+}
+
 .aboutMain .introTitle {
-  min-width: 70%;
+  user-select: none;
   text-align: left;
 }
 
@@ -42,6 +50,28 @@
   margin-top: 22%;
   font-size: 1.7em;
   margin-bottom: 5%;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.intro {
+  font-size: medium;
+  position: relative;
+  overflow: hidden;
+  animation: 2s ease-in-out fadein;
+}
+
+.intro:hover {
+  animation: ease-in-out;
 }
 
 .aboutMain .intro {

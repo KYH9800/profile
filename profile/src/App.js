@@ -78,7 +78,9 @@ const App = () => {
         </nav>
 
         <div className="title">
-          <a>인정합니다. 프론트엔드 개발자 고윤혁</a>
+          <div>
+            <a>인정합니다. 프론트엔드 개발자 고윤혁</a>
+          </div>
         </div>
       </header>
 
