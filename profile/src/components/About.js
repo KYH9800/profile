@@ -40,3 +40,24 @@ const About = () => {
 };
 
 export default About;
+
+/*
+const [ScrollY, setScrollY] = useState(0);
+  const handleFollow = () => {
+    setScrollY(window.pageYOffset); // window 스크롤 값을 ScrollY에 저장
+  };
+
+  useEffect(() => {
+    console.log('ScrollY is ', ScrollY); // ScrollY가 변화할때마다 값을 콘솔에 출력
+  }, [ScrollY]);
+
+  useEffect(() => {
+    const watch = () => {
+      window.addEventListener('scroll', handleFollow);
+    };
+    watch();
+    return () => {
+      window.removeEventListener('scroll', handleFollow);
+    };
+  }, []);
+*/
