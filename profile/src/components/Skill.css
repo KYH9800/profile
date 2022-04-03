@@ -1,5 +1,52 @@
-.Skills {
-  height: 70vh;
-  line-height: 70vh;
+.skill {
+  /* height: 70vh; */
+  /* line-height: 70vh; */
   background-color: #898989e8;
+}
+
+.skill .skillTitle {
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
+  font-size: 2.5vw;
+  margin: 0;
+  padding-top: 6.5%;
+  color: antiquewhite;
+}
+
+.first-line {
+  margin: auto;
+}
+
+.jsWrapper {
+  display: flex;
+  flex-flow: column;
+}
+
+.containor {
+  /* margin: auto; */
+  text-align: center;
+  display: inline-block;
+  width: 114px;
+  height: 116px;
+  border-radius: 30px 30px;
+  margin-right: 2rem;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.js-word {
+  visibility: hidden;
+}
+
+.js-word:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  border-radius: 30px 30px;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  opacity: 0.8;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #fff;
 }
