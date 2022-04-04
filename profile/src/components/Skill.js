@@ -8,22 +8,22 @@ import { notification } from 'antd';
 
 const Skill = () => {
   const [toggle, setToggle] = useState(false);
-  const jsRef = useRef();
-  const reactRef = useRef();
 
-  useEffect(() => {
-    gsap.to(jsRef.current, {
-      rotation: '+=360',
-    });
-    gsap.to(reactRef.current, {
-      rotation: '+=360',
-    });
-  });
+  // btn gsap
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: '#cafdfc', scale: 1.2 });
+  };
 
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: '#ffffff', scale: 1 });
+  };
+
+  // toggle
   const onToggleClick = () => {
     setToggle((prevState) => !prevState);
   };
 
+  // logo
   const jsLogo = () => {
     notification.open({
       message: 'JavaScript',
@@ -56,24 +56,112 @@ const Skill = () => {
     });
   };
 
+  const reduxLogo = () => {
+    notification.open({
+      message: 'Redux',
+      description: (
+        <p>
+          1. Redux를 활용한 상태관리
+          <br />
+          2. Redux-saga 비동기 통신
+        </p>
+      ),
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
+
+  const nodeJSLogo = () => {
+    notification.open({
+      message: 'Node.js',
+      description: (
+        <p>
+          1. Express 활용
+          <br />
+          2. Restful API 작성
+          <br />
+          3. Sequelize 활용 데이터 조작
+        </p>
+      ),
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
+
+  const mySQLLogo = () => {
+    notification.open({
+      message: 'MySQL',
+      description: <p>관계형 데이터 베이스 관리 시스템 사용</p>,
+      onClick: () => {
+        console.log('Notification Clicked!');
+      },
+    });
+  };
+
   return (
     <div className="skill">
       <h1 className="skillTitle">SKILLS</h1>
       <div className="first-line">
+        <div className="front-title">Front</div>
         <img
+          id="jsLogo"
           onClick={jsLogo}
-          ref={jsRef}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/140px-Unofficial_JavaScript_logo_2.svg.png"
         />
         <img
+          id="reactLogo"
           onClick={reactLogo}
-          ref={reactRef}
-          style={{ width: '160px', height: '140px' }}
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
         />
+        <img id="reduxLogo" onClick={reduxLogo} src="https://img.icons8.com/color/480/redux.png" />
       </div>
-      {toggle ? <div className="second-line">2</div> : null}
-      <button onClick={onToggleClick}>스킬 더보기</button>
+      <div className="second-line">
+        <div className="second-title">Back</div>
+        <img
+          id="nodeJSLogo"
+          onClick={nodeJSLogo}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"
+        />
+        <img
+          id="mySQLLogo"
+          onClick={mySQLLogo}
+          src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text.png"
+        />
+      </div>
+      {toggle ? (
+        <div className="third-line">
+          <>
+            <div className="front-title">Others</div>
+            <img
+              id="jsLogo"
+              onClick={jsLogo}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/140px-Unofficial_JavaScript_logo_2.svg.png"
+            />
+            <img
+              id="reactLogo"
+              onClick={reactLogo}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+            />
+            <img id="reduxLogo" onClick={reduxLogo} src="https://img.icons8.com/color/480/redux.png" />
+            <img
+              id="jsLogo"
+              onClick={jsLogo}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/140px-Unofficial_JavaScript_logo_2.svg.png"
+            />
+            <img
+              id="reactLogo"
+              onClick={reactLogo}
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png"
+            />
+            <img id="reduxLogo" onClick={reduxLogo} src="https://img.icons8.com/color/480/redux.png" />
+          </>
+        </div>
+      ) : null}
+      <button className="custom-btn moreBtn" onClick={onToggleClick} onMouseEnter={onEnter} onMouseLeave={onLeave}>
+        스킬 더보기
+      </button>
     </div>
   );
 };
@@ -81,12 +169,8 @@ const Skill = () => {
 export default Skill;
 
 /*
-Redux
-Redux-saga 비동기 통신
-
 Node.js
-Express
-Restful API 작성
+
 
 Sequelize
 Sequelize를 통한 MySQL 데이터 조작
