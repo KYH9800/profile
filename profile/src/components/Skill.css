@@ -10,7 +10,7 @@
   font-size: 2.8vw;
   font-weight: bold;
   margin: 0;
-  padding-top: 5.5%;
+  padding-top: 4%;
   padding-bottom: 1%;
   color: rgb(27, 94, 25);
 }
@@ -29,15 +29,15 @@
 
 .first-line {
   margin-top: 1%;
-  margin-bottom: 6%;
+  margin-bottom: 4%;
 }
 
 .first-title {
-  font-size: 2vw;
+  font-size: 1.2vw;
   margin: auto;
-  margin-bottom: 1%;
+  margin-bottom: 2.2%;
 
-  width: 20%;
+  width: 10%;
   border-radius: 10px;
   background-color: #e3ffdae8;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
@@ -49,11 +49,11 @@
 }
 
 .second-title {
-  font-size: 2vw;
+  font-size: 1.2vw;
   margin: auto;
-  margin-bottom: 2%;
+  margin-bottom: 2.2%;
 
-  width: 20%;
+  width: 10%;
   border-radius: 10px;
   background-color: #e3ffdae8;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
@@ -65,11 +65,11 @@
 }
 
 .third-title {
-  font-size: 2vw;
+  font-size: 1.2vw;
   margin: auto;
-  margin-bottom: 2%;
+  margin-bottom: 2.2%;
 
-  width: 20%;
+  width: 10%;
   border-radius: 10px;
   background-color: #e3ffdae8;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
@@ -102,8 +102,28 @@ img {
   }
 }
 
+#htmlLogo {
+  width: 105px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#htmlLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#cssLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#cssLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
 #jsLogo {
-  width: 120px;
+  width: 100px;
   border-radius: 30%;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
@@ -112,14 +132,14 @@ img {
 }
 
 #reactLogo {
-  width: 130px;
+  width: 110px;
 }
 #reactLogo:hover {
   animation: run 1s linear infinite;
 }
 
 #reduxLogo {
-  width: 130px;
+  width: 100px;
   border-radius: 20%;
 }
 #reduxLogo:hover {
@@ -127,7 +147,7 @@ img {
 }
 
 #nodeJSLogo {
-  width: 120px;
+  width: 100px;
   border-radius: 20%;
   background-color: #ffffff;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
@@ -137,12 +157,50 @@ img {
 }
 
 #mySQLLogo {
-  width: 120px;
+  width: 100px;
   border-radius: 10%;
   background-color: #ffffff;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 #mySQLLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#awsLogo {
+  width: 100px;
+  border-radius: 10%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#awsLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#gitLogo {
+  width: 100px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#gitLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#notionLogo {
+  width: 100px;
+  /* border-radius: 20%; */
+  /* box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%); */
+}
+#notionLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#slackLogo {
+  width: 100px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#slackLogo:hover {
   animation: skillanimation 1s infinite;
 }
 
@@ -163,62 +221,4 @@ img {
 }
 .moreBtn:active {
   background-color: #ffffff;
-}
-
-#htmlLogo {
-  width: 130px;
-  height: 125px;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-#htmlLogo:hover {
-  animation: skillanimation 1s infinite;
-}
-
-#cssLogo {
-  width: 130px;
-  height: 125px;
-  border-radius: 50%;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-#cssLogo:hover {
-  animation: skillanimation 1s infinite;
-}
-
-#awsLogo {
-  width: 120px;
-  border-radius: 10%;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-#awsLogo:hover {
-  animation: skillanimation 1s infinite;
-}
-
-#gitLogo {
-  width: 130px;
-  border-radius: 50%;
-  background-color: antiquewhite;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-#gitLogo:hover {
-  animation: skillanimation 1s infinite;
-}
-
-#notionLogo {
-  width: 130px;
-  /* border-radius: 20%; */
-  /* box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%); */
-}
-#notionLogo:hover {
-  animation: skillanimation 1s infinite;
-}
-
-#slackLogo {
-  width: 130px;
-  background-color: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-#slackLogo:hover {
-  animation: skillanimation 1s infinite;
 }
