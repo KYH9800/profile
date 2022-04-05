@@ -1,23 +1,78 @@
 .skill {
   /* height: 70vh; */
   /* line-height: 70vh; */
-  background-color: #898989e8;
+  padding-bottom: 10%;
+  background-color: #e3ffdae8;
 }
 
 .skill .skillTitle {
   font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
   font-size: 2.8vw;
+  font-weight: bold;
   margin: 0;
-  padding-top: 6.5%;
-  color: rgb(246, 235, 219);
+  padding-top: 5.5%;
+  padding-bottom: 1%;
+  color: rgb(27, 94, 25);
+}
+
+.skill-wrapper {
+  background-color: #f0efff;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 65%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 
 .first-line {
-  margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: 6%;
 }
 
-.front-title {
+.first-title {
   font-size: 2vw;
+  margin: auto;
+  margin-bottom: 1%;
+
+  width: 20%;
+  border-radius: 10px;
+  background-color: #e3ffdae8;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.second-line {
+  margin-top: 2%;
+  margin-bottom: 6%;
+}
+
+.second-title {
+  font-size: 2vw;
+  margin: auto;
+  margin-bottom: 2%;
+
+  width: 20%;
+  border-radius: 10px;
+  background-color: #e3ffdae8;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.third-line {
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+
+.third-title {
+  font-size: 2vw;
+  margin: auto;
+  margin-bottom: 2%;
+
+  width: 20%;
+  border-radius: 10px;
+  background-color: #e3ffdae8;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
 }
 
 img {
@@ -48,9 +103,8 @@ img {
 }
 
 #jsLogo {
-  border-radius: 30%;
   width: 120px;
-  height: 120px;
+  border-radius: 30%;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 #jsLogo:hover {
@@ -58,44 +112,34 @@ img {
 }
 
 #reactLogo {
-  border-radius: 10%;
   width: 130px;
-  height: 110px;
 }
 #reactLogo:hover {
   animation: run 1s linear infinite;
 }
 
 #reduxLogo {
-  border-radius: 20%;
   width: 130px;
-  height: 130px;
+  border-radius: 20%;
 }
 #reduxLogo:hover {
   animation: skillanimation 1s infinite;
 }
 
-.second-line {
-  margin-top: 2%;
-}
-
-.second-title {
-  font-size: 2vw;
-}
-
 #nodeJSLogo {
-  border-radius: 10%;
-  width: 160px;
-  height: 100px;
+  width: 120px;
+  border-radius: 20%;
+  background-color: #ffffff;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 #nodeJSLogo:hover {
   animation: skillanimation 1s infinite;
 }
 
 #mySQLLogo {
+  width: 120px;
   border-radius: 10%;
-  width: 130px;
-  height: 130px;
+  background-color: #ffffff;
   box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
 }
 #mySQLLogo:hover {
@@ -119,4 +163,62 @@ img {
 }
 .moreBtn:active {
   background-color: #ffffff;
+}
+
+#htmlLogo {
+  width: 130px;
+  height: 125px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#htmlLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#cssLogo {
+  width: 130px;
+  height: 125px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#cssLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#awsLogo {
+  width: 120px;
+  border-radius: 10%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#awsLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#gitLogo {
+  width: 130px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#gitLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#notionLogo {
+  width: 130px;
+  /* border-radius: 20%; */
+  /* box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%); */
+}
+#notionLogo:hover {
+  animation: skillanimation 1s infinite;
+}
+
+#slackLogo {
+  width: 130px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+#slackLogo:hover {
+  animation: skillanimation 1s infinite;
 }
