@@ -1,5 +1,53 @@
+/* 둥둥 떠다님 */
+@keyframes skillanimation {
+  _0 {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .projectWrapper {
-  height: 50vh;
-  line-height: 50vh;
+  /* height: 50vh; */
+  /* line-height: 50vh; */
   background-color: rgb(183 219 248 / 80%);
+}
+
+.project-title {
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin: 0;
+  padding-top: 4%;
+  padding-bottom: 1%;
+  color: rgb(73, 43, 238);
+}
+
+.project-card-wrapper {
+  display: inline-flex;
+  margin-bottom: 8%;
+}
+
+.project-card {
+  margin: auto;
+  margin-left: 1%;
+  margin-right: 1%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+/* 카드 설명란 */
+.ant-card-body {
+  padding: 5%;
+}
+
+.project-card:hover {
+  animation: skillanimation 1s;
+}
+
+.card-img {
+  margin: 0;
 }

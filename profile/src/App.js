@@ -79,7 +79,7 @@ const App = () => {
 
         <div className="title">
           <div>
-            <a>인정합니다. 프론트엔드 개발자 고윤혁</a>
+            <a>인정하는 프론트엔드 개발자 고윤혁입니다.</a>
           </div>
         </div>
       </header>

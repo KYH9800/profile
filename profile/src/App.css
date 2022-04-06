@@ -61,6 +61,7 @@ body {
 }
 
 .title {
+  z-index: 1;
   color: #ffffff;
   margin: auto;
   max-width: 1000px;
