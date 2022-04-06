@@ -18,13 +18,14 @@ const Project = () => {
             cover={
               <img
                 className="card-img"
-                alt="example"
-                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                style={{ width: '285px', height: '135.13px', border: '1px solid gray' }}
+                alt="SNS-project"
+                src="https://user-images.githubusercontent.com/61128538/160061163-2475fd02-b6c5-4819-aa12-1416ff26768a.gif"
               />
             }
             actions={[<GithubOutlined key="github" />, <LinkOutlined key="link" />, <BoldOutlined key="blog" />]}>
             <Meta
-              title="Twic-SNS"
+              title="SNS-project"
               description={
                 <p>
                   1. 프로젝트의 대한 설명
@@ -40,8 +41,9 @@ const Project = () => {
             cover={
               <img
                 className="card-img"
-                alt="example"
-                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                style={{ width: '285px', height: '135.13px' }}
+                alt="community-project"
+                src="https://user-images.githubusercontent.com/61128538/153403861-c78e0889-ba9f-4761-96ce-e695180f1e72.png"
               />
             }
             actions={[<GithubOutlined key="github" />, <LinkOutlined key="link" />, <BoldOutlined key="blog" />]}>
@@ -62,8 +64,9 @@ const Project = () => {
             cover={
               <img
                 className="card-img"
-                alt="example"
-                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+                style={{ width: '285px', height: '135.13px' }}
+                alt="profile-project"
+                src="https://user-images.githubusercontent.com/61128538/161945918-3ec1b6db-6b75-4414-a86d-1e9f0a928624.png"
               />
             }
             actions={[<GithubOutlined key="github" />, <LinkOutlined key="link" />, <BoldOutlined key="blog" />]}>
