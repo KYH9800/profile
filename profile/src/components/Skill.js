@@ -245,7 +245,8 @@ const Skill = () => {
             <img
               id="slackLogo"
               onClick={slackLogo}
-              src="https://cdn.icon-icons.com/icons2/3041/PNG/512/slack_logo_icon_189220.png"
+              src="https://play-lh.googleusercontent.com/lV1DhBeSuikQy6fLPhgfNHUxDqterNlur4oB1Z_Yr0NOSiWwQOD0g8gWCjVf1mmMuw"
+              alt="slackLogo"
             />
           </>
         </div>

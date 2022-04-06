@@ -28,26 +28,18 @@
 }
 
 .project-card-wrapper {
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 8%;
 }
 
-.project-card {
-  margin: auto;
-  margin-left: 1%;
-  margin-right: 1%;
-  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
-}
-
-/* 카드 설명란 */
-.ant-card-body {
-  padding: 5%;
-}
-
-.project-card:hover {
-  animation: skillanimation 1s;
+.card {
+  display: inline-flex;
 }
 
 .card-img {
-  margin: 0;
+  border-radius: 7px;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 320px;
 }
