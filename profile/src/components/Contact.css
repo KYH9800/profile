@@ -39,20 +39,61 @@
   color: rgb(255, 255, 255);
 }
 
+.anticon {
+  margin-right: 5px;
+}
+
 svg {
   width: 15px;
   height: 15px;
 }
 
-/* 500px 이하가 되는 순간 pc-link 사라짐 */
-@media (max-width: 500px) {
-  .pc-link {
-    display: none;
-  }
-}
 /* 500 이상부터 mobile-link 사라짐 */
 @media (min-width: 500px) {
   .mobile-link {
     display: none;
+  }
+  .pc-link {
+    display: block;
+    margin-bottom: 1.2%;
+  }
+}
+
+/* Mobile 버전, 500px 이하가 되는 순간 pc-link 사라짐 */
+@media (max-width: 500px) {
+  .pc-link {
+    display: none;
+  }
+
+  .contactWrapper h1 {
+    font-size: 3vh;
+  }
+
+  .contactWrapper h2 {
+    font-size: 2vh;
+    margin-bottom: 5%;
+  }
+
+  .intro-wrapper a {
+    margin: 0;
+  }
+
+  .mobile-ptag {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(164 228 252 / 74%);
+    margin: auto;
+    margin-bottom: 2%;
+    width: 70%;
+    padding: 2.7%;
+  }
+  .mobile-ptag:hover {
+    color: rgb(71, 61, 250);
+    background-color: rgba(101, 214, 255, 0.74);
+  }
+
+  .intro-wrapper svg {
+    width: 16px;
+    height: 16px;
   }
 }

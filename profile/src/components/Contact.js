@@ -12,41 +12,60 @@ const Contact = () => {
           Yun Hyeok Ko <span className="years">@2022</span>
         </h2>
         <div className="intro-wrapper">
-          <p>
+          <a className="pc-link" href="tel:010-9800-5226">
             <PhoneOutlined />
-            <a href="tel:010-9800-5226">010-9800-5226</a>
-          </p>
-          <p>
+            010-9800-5226
+          </a>
+          <a className="mobile-link" href="tel:010-9800-5226">
+            <p className="mobile-ptag">
+              <PhoneOutlined />
+              010-9800-5226
+            </p>
+          </a>
+
+          <a className="pc-link" href="mailto:sksgur3217@gmail.com">
             <MailOutlined />
-            <a href="mailto:sksgur3217@gmail.com">sksgur3217@gmail.com</a>
-          </p>
-          <p>
+            sksgur3217@gmail.com
+          </a>
+          <a className="mobile-link" href="mailto:sksgur3217@gmail.com">
+            <p className="mobile-ptag">
+              <MailOutlined />
+              sksgur3217@gmail.com
+            </p>
+          </a>
+
+          <a className="pc-link" href="https://github.com/ko7452" target="blank">
             <GithubOutlined />
-            <a className="pc-link" href="https://github.com/ko7452" target="blank">
+            github
+          </a>
+          <a className="mobile-link" href="https://github.com/ko7452">
+            <p className="mobile-ptag">
+              <GithubOutlined />
               github
-            </a>
-            <a className="mobile-link" href="https://github.com/ko7452">
-              github
-            </a>
-          </p>
-          <p>
+            </p>
+          </a>
+
+          <a className="pc-link" href="https://hyeoky.tistory.com/" target="blank">
             <BoldOutlined />
-            <a className="pc-link" href="https://hyeoky.tistory.com/" target="blank">
+            Blog
+          </a>
+          <a className="mobile-link" href="https://hyeoky.tistory.com/">
+            <p className="mobile-ptag">
+              <BoldOutlined />
               Blog
-            </a>
-            <a className="mobile-link" href="https://hyeoky.tistory.com/">
-              Blog
-            </a>
-          </p>
-          <p>
+            </p>
+          </a>
+
+          <a className="pc-link" href="https://www.instagram.com/kyh0506/?hl=ko" target="blank">
             <InstagramOutlined />
-            <a className="pc-link" href="https://www.instagram.com/kyh0506/?hl=ko" target="blank">
+            Instagram
+          </a>
+          <a className="mobile-link" href="https://www.instagram.com/kyh0506/?hl=ko">
+            <p className="mobile-ptag">
+              <InstagramOutlined />
               Instagram
-            </a>
-            <a className="mobile-link" href="https://www.instagram.com/kyh0506/?hl=ko">
-              Instagram
-            </a>
-          </p>
+            </p>
+          </a>
         </div>
       </main>
     </div>
