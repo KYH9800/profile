@@ -176,22 +176,26 @@ body {
     top: 0;
     left: 0;
     right: 0;
+
     z-index: 1;
-    /* height: 50px; */
-    /* margin: auto; */
+
+    line-height: 50px;
+
+    height: 50px;
+    width: 1000px;
+    margin: auto;
   }
 
   .menulist {
     background-color: #2e2e31;
     width: auto;
+    height: auto;
   }
 
   .menulist ul {
     background-color: #2e2e31;
-  }
-
-  .menulist ul li {
     width: auto;
+    height: auto;
   }
 
   /* 애니메이션 */

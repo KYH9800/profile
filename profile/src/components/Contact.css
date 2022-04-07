@@ -79,9 +79,10 @@ svg {
   }
 
   .mobile-ptag {
-    border: 1px solid black;
+    border: 1px solid rgb(194, 194, 194);
     border-radius: 10px;
-    background-color: rgb(164 228 252 / 74%);
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+    background-color: rgb(255, 255, 255);
     margin: auto;
     margin-bottom: 2%;
     width: 70%;
