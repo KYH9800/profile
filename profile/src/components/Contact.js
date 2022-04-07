@@ -24,21 +24,15 @@ const Contact = () => {
           </p>
           <p>
             <GithubOutlined />
-            <a href="https://github.com/ko7452" target="blank">
-              github
-            </a>
+            <a href="https://github.com/ko7452">github</a>
           </p>
           <p>
             <BoldOutlined />
-            <a href="https://hyeoky.tistory.com/" target="blank">
-              Blog
-            </a>
+            <a href="https://hyeoky.tistory.com/">Blog</a>
           </p>
           <p>
             <InstagramOutlined />
-            <a href="https://www.instagram.com/kyh0506/?hl=ko" target="blank">
-              Instagram
-            </a>
+            <a href="https://www.instagram.com/kyh0506/?hl=ko">Instagram</a>
           </p>
         </div>
       </main>
