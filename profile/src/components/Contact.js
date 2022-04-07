@@ -14,31 +14,29 @@ const Contact = () => {
         <div className="intro-wrapper">
           <p>
             <PhoneOutlined />
-            <a href="" target="blank">
-              010-9800-5226
-            </a>
+            <a href="tel:010-9800-5226">010-9800-5226</a>
           </p>
           <p>
             <MailOutlined />
-            <a href="" target="blank">
+            <a href="mailto:sksgur3217@gmail.com" target="blank">
               sksgur3217@gmail.com
             </a>
           </p>
           <p>
             <GithubOutlined />
-            <a href="" target="blank">
+            <a href="https://github.com/ko7452" target="blank">
               github
             </a>
           </p>
           <p>
             <BoldOutlined />
-            <a href="" target="blank">
+            <a href="https://hyeoky.tistory.com/" target="blank">
               Blog
             </a>
           </p>
           <p>
             <InstagramOutlined />
-            <a href="" target="blank">
+            <a href="https://www.instagram.com/kyh0506/?hl=ko" target="blank">
               Instagram
             </a>
           </p>

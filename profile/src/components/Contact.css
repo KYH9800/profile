@@ -3,6 +3,26 @@
   padding-top: 5%;
 }
 
+.contactWrapper h1 {
+  user-select: none;
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
+  font-size: 1.6vw;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.contactWrapper h2 {
+  user-select: none;
+  font-family: 'Quicksand', 'Noto Sans KR', sans-serif;
+  font-size: 1vw;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.years {
+  color: rgb(202, 61, 61);
+}
+
 .intro-wrapper {
   padding-bottom: 5%;
 }
@@ -12,7 +32,7 @@
 }
 
 .intro-wrapper a {
-  color: black;
+  color: rgb(52, 52, 52);
   margin-left: 5px;
 }
 .intro-wrapper a:hover {
