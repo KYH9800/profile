@@ -1,3 +1,12 @@
+/* 회전 */
+@keyframes run {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* 둥둥 떠다님 */
 @keyframes skillanimation {
   _0 {
@@ -28,18 +37,78 @@
 }
 
 .project-card-wrapper {
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 8%;
 }
 
 .card {
-  display: inline-flex;
+  margin: auto;
+  margin: 1%;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+.card:hover {
+  animation: skillanimation 0.2s;
 }
 
 .card-img {
   border-radius: 7px;
-  margin: auto;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin: 0;
+  margin-bottom: 3px;
   width: 320px;
+  height: 180px;
+}
+
+.card-ex {
+  border-radius: 5px;
+  margin-bottom: 9%;
+  height: 38vh;
+}
+
+.card-ex h3 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: rgb(91, 91, 91);
+}
+
+.card-ex p {
+  text-align: left;
+  margin-left: 18%;
+}
+
+.project-link {
+  width: 60%;
+  height: 35px;
+  border-radius: 20px;
+  margin: auto;
+  margin-bottom: 7%;
+}
+
+.project-link a {
+  border-bottom: 3.2px solid rgb(87, 87, 87);
+  border-radius: 30px;
+  padding-top: 12%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.project-link svg {
+  color: black;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+
+.project-link svg:hover {
+  animation: run 0.5s;
+}
+
+/* 반응형 모바일 */
+@media (max-width: 1200px) {
+  .project-card-wrapper {
+    display: block;
+    margin-bottom: 8%;
+  }
 }
