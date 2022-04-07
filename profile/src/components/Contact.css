@@ -1,5 +1,25 @@
 .contactWrapper {
-  height: 50vh;
-  line-height: 50vh;
-  background-color: #ffffff;
+  background-color: rgb(164 228 252 / 74%);
+  padding-top: 5%;
+}
+
+.intro-wrapper {
+  padding-bottom: 5%;
+}
+
+.intro-wrapper p {
+  font-size: 15px;
+}
+
+.intro-wrapper a {
+  color: black;
+  margin-left: 5px;
+}
+.intro-wrapper a:hover {
+  color: rgb(255, 255, 255);
+}
+
+svg {
+  width: 15px;
+  height: 15px;
 }
