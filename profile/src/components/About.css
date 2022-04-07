@@ -6,7 +6,7 @@
 
 .aboutMain {
   margin: auto;
-  max-width: 1200px;
+  max-width: 70%;
   display: flex;
   /* background-color: beige; */
 }
@@ -42,6 +42,7 @@
 .aboutMain .introTitle {
   user-select: none;
   text-align: left;
+  width: 100%;
 }
 
 .aboutMain .introTitle h3 {
@@ -76,11 +77,59 @@
   padding-left: 2%;
 }
 
-.aboutMain .introTitle p span {
+.aboutMain .introTitle span {
   font-weight: bold;
+  color: rgb(215, 55, 55);
 }
 
 .aboutMain .introTitle p a {
   text-decoration: none;
   font-weight: bold;
+}
+
+/* 500px 이상 되는 순간 사라짐*/
+@media (min-width: 500px) {
+  /* todo */
+}
+
+/* Mobile 버전, 500px 이하가 되는 순간 사라짐 */
+@media (max-width: 500px) {
+  .aboutMain {
+    max-width: 82%;
+  }
+
+  .aboutWrapper {
+    height: auto;
+    padding-bottom: 20%;
+  }
+
+  .aboutMain {
+    display: block;
+  }
+
+  .aboutMain h2 {
+    align-items: center;
+    margin-bottom: 2%;
+    padding: 0;
+    padding-top: 25%;
+    font-size: 1.7em;
+    min-width: 0%;
+  }
+
+  .aboutMain .introTitle h3 {
+    margin-top: 8%;
+    padding-left: 1%;
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+
+  .aboutMain .intro {
+    text-align: center;
+    border-left: none;
+    font-size: 15px;
+    padding: 1.3%;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
 }

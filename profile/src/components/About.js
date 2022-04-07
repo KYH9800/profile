@@ -9,7 +9,7 @@ const About = () => {
         <h2>About Me</h2>
         <div className="introTitle">
           <h3>
-            "빠르게 성공하는 방법은 부족함과 실패를 <span>인정하는</span> 것이다."
+            "빠르게 성공하는 방법은 부족함과 실패를 <span>인정</span>하는 것이다."
           </h3>
           <div className="intro">
             <p>
@@ -23,7 +23,7 @@ const About = () => {
                 href="https://planet-aletopelta-fbc.notion.site/ES2021-c0ab1e5ea3a7434abd95e5ecd2a11a25"
                 style={{ color: 'green' }}
                 target="blank">
-                인프런
+                {` `}인프런
               </a>
               을 통해 기초부터 심화과정까지의 개발 교육과정을 마쳤습니다.
             </p>
