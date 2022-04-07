@@ -43,3 +43,16 @@ svg {
   width: 15px;
   height: 15px;
 }
+
+/* 500px 이하가 되는 순간 pc-link 사라짐 */
+@media (max-width: 500px) {
+  .pc-link {
+    display: none;
+  }
+}
+/* 500 이상부터 mobile-link 사라짐 */
+@media (min-width: 500px) {
+  .mobile-link {
+    display: none;
+  }
+}

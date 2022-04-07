@@ -18,21 +18,34 @@ const Contact = () => {
           </p>
           <p>
             <MailOutlined />
-            <a href="mailto:sksgur3217@gmail.com" target="blank">
-              sksgur3217@gmail.com
-            </a>
+            <a href="mailto:sksgur3217@gmail.com">sksgur3217@gmail.com</a>
           </p>
           <p>
             <GithubOutlined />
-            <a href="https://github.com/ko7452">github</a>
+            <a className="pc-link" href="https://github.com/ko7452" target="blank">
+              github
+            </a>
+            <a className="mobile-link" href="https://github.com/ko7452">
+              github
+            </a>
           </p>
           <p>
             <BoldOutlined />
-            <a href="https://hyeoky.tistory.com/">Blog</a>
+            <a className="pc-link" href="https://hyeoky.tistory.com/" target="blank">
+              Blog
+            </a>
+            <a className="mobile-link" href="https://hyeoky.tistory.com/">
+              Blog
+            </a>
           </p>
           <p>
             <InstagramOutlined />
-            <a href="https://www.instagram.com/kyh0506/?hl=ko">Instagram</a>
+            <a className="pc-link" href="https://www.instagram.com/kyh0506/?hl=ko" target="blank">
+              Instagram
+            </a>
+            <a className="mobile-link" href="https://www.instagram.com/kyh0506/?hl=ko">
+              Instagram
+            </a>
           </p>
         </div>
       </main>
