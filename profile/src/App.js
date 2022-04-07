@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // css
 import './App.css';
-import { Menu } from 'antd';
 import { MenuOutlined } from '@ant-design/icons';
 // components
 import Contact from './components/Contact';
@@ -20,7 +19,11 @@ const App = () => {
   const educationRef = useRef();
   const contactRef = useRef();
 
-  const [collapsed, setCollapsed] = useState(false);
+  const [toggle, setToggle] = useState(false);
+
+  const onClickToggle = () => {
+    setToggle((prevState) => !prevState);
+  };
 
   useEffect(() => {
     gsap.to(homeRef.current, {
@@ -83,47 +86,45 @@ const App = () => {
         </nav>
         {/* 모바일 화면 */}
         <nav className="mobile-topMenu">
-          <div className="menulist">
-            <Menu
-              defaultSelectedKeys={['1']}
-              defaultOpenKeys={['sub1']}
-              mode="inline"
-              theme="dark"
-              inlineCollapsed={collapsed}>
-              <Menu.SubMenu key="SubMenu" icon={<MenuOutlined />} title="MENU">
-                <Menu.Item key="home">
-                  <a className="menuLink" ref={homeRef} href="#">
+          <div className="bugger">
+            <MenuOutlined onClick={onClickToggle} />
+          </div>
+          {toggle ? (
+            <div className="menulist">
+              <ul>
+                <li>
+                  <a className="menuLink" ref={homeRef} href="#" onClick={onClickToggle}>
                     Home
                   </a>
-                </Menu.Item>
-                <Menu.Item key="about">
-                  <a className="menuLink" ref={aboutRef} href="#About">
+                </li>
+                <li>
+                  <a className="menuLink" ref={aboutRef} href="#About" onClick={onClickToggle}>
                     About
                   </a>
-                </Menu.Item>
-                <Menu.Item key="skill">
-                  <a className="menuLink" ref={skillRef} href="#Skill">
+                </li>
+                <li>
+                  <a className="menuLink" ref={skillRef} href="#Skill" onClick={onClickToggle}>
                     Skill
                   </a>
-                </Menu.Item>
-                <Menu.Item key="project">
-                  <a className="menuLink" ref={projectRef} href="#Project">
+                </li>
+                <li>
+                  <a className="menuLink" ref={projectRef} href="#Project" onClick={onClickToggle}>
                     Project
                   </a>
-                </Menu.Item>
-                <Menu.Item key="education">
-                  <a className="menuLink" ref={educationRef} href="#Education">
+                </li>
+                <li>
+                  <a className="menuLink" ref={educationRef} href="#Education" onClick={onClickToggle}>
                     Education
                   </a>
-                </Menu.Item>
-                <Menu.Item key="contact">
-                  <a className="menuLink" ref={contactRef} href="#Contact">
+                </li>
+                <li>
+                  <a className="menuLink" ref={contactRef} href="#Contact" onClick={onClickToggle}>
                     Contact
                   </a>
-                </Menu.Item>
-              </Menu.SubMenu>
-            </Menu>
-          </div>
+                </li>
+              </ul>
+            </div>
+          ) : null}
         </nav>
 
         <div className="title">

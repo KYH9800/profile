@@ -179,23 +179,54 @@ body {
 
     z-index: 1;
 
-    line-height: 50px;
+    background-color: #000000bd;
 
-    height: 50px;
-    width: 1000px;
+    width: 100%;
     margin: auto;
   }
 
-  .menulist {
-    background-color: #2e2e31;
-    width: auto;
-    height: auto;
+  .bugger {
+    background-color: #00000082;
+    color: #d2d2d2;
+    font-family: 'Trebuchet MS', Dotum, Arial;
+    text-align: left;
+    padding-left: 4%;
+    padding-bottom: 1.2%;
   }
 
-  .menulist ul {
-    background-color: #2e2e31;
-    width: auto;
-    height: auto;
+  .bugger span {
+    margin-top: 2.2%;
+  }
+
+  .bugger svg {
+    color: #fffbf1;
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-topMenu ul {
+    padding: 0;
+    margin: 0;
+    background-color: #2e2e31f5;
+  }
+
+  .mobile-topMenu ul li {
+    line-height: 50px;
+    list-style: none;
+    vertical-align: middle;
+    text-align: left;
+    padding-left: 4%;
+  }
+  .mobile-topMenu ul li:active {
+    background-color: #252525;
+  }
+
+  .mobile-topMenu .menuLink {
+    color: #d2d2d2;
+    user-select: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', Dotum, Arial;
   }
 
   /* 애니메이션 */
@@ -215,3 +246,16 @@ body {
     height: 80vw;
   }
 }
+
+/* 
+.bugger span {
+    margin: 2%;
+    margin-left: 4%;
+  }
+
+  .bugger svg {
+    color: #fffbf1;
+    width: 30px;
+    height: 30px;
+  }
+*/
