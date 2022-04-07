@@ -83,11 +83,11 @@ const App = () => {
         </nav>
         {/* 모바일 화면 */}
         <nav className="mobile-topMenu">
-          <div className="menulist" style={{ width: 'auto' }}>
+          <div className="menulist">
             <Menu
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
-              mode="horizontal"
+              mode="inline"
               theme="dark"
               inlineCollapsed={collapsed}>
               <Menu.SubMenu key="SubMenu" icon={<MenuOutlined />} title="MENU">
