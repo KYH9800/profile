@@ -157,3 +157,56 @@ body {
   /* max-width: 1000px; */
   /* padding: 1rem; */
 }
+
+/* 500px 이상 되는 순간 mobile-topMenu 사라짐*/
+@media (min-width: 500px) {
+  .mobile-topMenu {
+    display: none;
+  }
+}
+
+/* Mobile 버전, 500px 이하가 되는 순간 topMenu 사라짐 */
+@media (max-width: 500px) {
+  .topMenu {
+    display: none;
+  }
+
+  .mobile-topMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 50px;
+    /* margin: auto; */
+  }
+
+  .menulist {
+    background-color: #2e2e31;
+  }
+
+  .menulist ul {
+    background-color: #2e2e31;
+  }
+
+  .menulist ul li {
+    width: 100%;
+  }
+
+  /* 애니메이션 */
+  .title div:before,
+  .title div:after {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .title a {
+    width: 100%;
+  }
+
+  .title a:before,
+  .title a:after {
+    width: 80vw;
+    height: 80vw;
+  }
+}

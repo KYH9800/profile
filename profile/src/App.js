@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 // css
 import './App.css';
+import { Menu } from 'antd';
+import { MenuOutlined } from '@ant-design/icons';
 // components
 import Contact from './components/Contact';
 import Skill from './components/Skill';
@@ -17,6 +19,8 @@ const App = () => {
   const projectRef = useRef();
   const educationRef = useRef();
   const contactRef = useRef();
+
+  const [collapsed, setCollapsed] = useState(false);
 
   useEffect(() => {
     gsap.to(homeRef.current, {
@@ -42,6 +46,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="header">
+        {/* 웹 화면 */}
         <nav className="topMenu">
           <ul>
             <li>
@@ -75,6 +80,50 @@ const App = () => {
               </a>
             </li>
           </ul>
+        </nav>
+        {/* 모바일 화면 */}
+        <nav className="mobile-topMenu">
+          <div className="menulist" style={{ width: 'auto' }}>
+            <Menu
+              defaultSelectedKeys={['1']}
+              defaultOpenKeys={['sub1']}
+              mode="horizontal"
+              theme="dark"
+              inlineCollapsed={collapsed}>
+              <Menu.SubMenu key="SubMenu" icon={<MenuOutlined />} title="MENU">
+                <Menu.Item key="home">
+                  <a className="menuLink" ref={homeRef} href="#">
+                    Home
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="about">
+                  <a className="menuLink" ref={aboutRef} href="#About">
+                    About
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="skill">
+                  <a className="menuLink" ref={skillRef} href="#Skill">
+                    Skill
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="project">
+                  <a className="menuLink" ref={projectRef} href="#Project">
+                    Project
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="education">
+                  <a className="menuLink" ref={educationRef} href="#Education">
+                    Education
+                  </a>
+                </Menu.Item>
+                <Menu.Item key="contact">
+                  <a className="menuLink" ref={contactRef} href="#Contact">
+                    Contact
+                  </a>
+                </Menu.Item>
+              </Menu.SubMenu>
+            </Menu>
+          </div>
         </nav>
 
         <div className="title">
