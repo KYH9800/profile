@@ -34,7 +34,7 @@ const Contact = () => {
             </p>
           </a>
 
-          <a className="pc-link" href="https://github.com/ko7452" target="blank">
+          <a className="pc-link" href="https://github.com/KYH9800" target="blank">
             <GithubOutlined />
             github
           </a>
