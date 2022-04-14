@@ -38,7 +38,7 @@ const Contact = () => {
             <GithubOutlined />
             github
           </a>
-          <a className="mobile-link" href="https://github.com/ko7452">
+          <a className="mobile-link" href="https://github.com/KYH9800">
             <p className="mobile-ptag">
               <GithubOutlined />
               github
